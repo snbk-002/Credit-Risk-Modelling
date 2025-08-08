@@ -18,8 +18,9 @@ import os
 
 
 # Load the dataset
-a1 = pd.read_excel("C:\\xxxx\\Desktop\\CampusX_10_Apr\\Credit_risk_excel_files\\case_study1.xlsx")
-a2 = pd.read_excel("C:\\xxxx\\Desktop\\CampusX_10_Apr\\Credit_risk_excel_files\\case_study2.xlsx")
+
+a1 = pd.read_excel("A:\End to End ML Projects\Credit Modeling\case_study2.xlsx")
+a2 = pd.read_excel("A:\End to End ML Projects\Credit Modeling\case_study1.xlsx")
 
 
 
@@ -532,6 +533,7 @@ print("Test Accuracy:", accuracy)
 #               print(f"Train Accuracy: {train_accuracy:.2f}")
 #               print(f"Test Accuracy : {test_accuracy :.2f}")
 #               print("-" * 30)
+
 
 
 
