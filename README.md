@@ -1,91 +1,89 @@
 # Credit-Risk-Modelling
 Revising the current credit lending strategy of bank using machine learning
 
-📌 Credit Risk Modeling & EPS Prediction
+
+## 📌 Credit Risk Modeling & EPS Prediction
 Overview
 This project implements an end-to-end machine learning solution for credit risk assessment and EPS (Earnings Per Share) prediction in the banking sector.
 It covers data cleaning, feature engineering, model building, hyperparameter tuning, and web deployment using Flask, allowing users to input financial metrics and instantly receive EPS predictions.
 
-Project Workflow
-Data Understanding & Preparation
 
-Merged Bureau Dataset and Internal Product Dataset using a common identifier.
 
-Handled missing values, outliers, and invalid entries.
+## Project Workflow
+### 1. Data Understanding & Preparation
 
-Removed low-quality features based on missing thresholds.
+  Merged Bureau Dataset and Internal Product Dataset using a common identifier.
 
-Performed categorical feature analysis using Chi-square test and numerical feature selection using ANOVA & Variance Inflation Factor (VIF).
+  Handled missing values, outliers, and invalid entries.
 
-Feature Engineering
+  Removed low-quality features based on missing thresholds.
 
-Label encoded ordinal variables such as Education Level.
+  Performed categorical feature analysis using Chi-square test and numerical feature selection using ANOVA & Variance Inflation Factor (VIF).
 
-One-Hot encoded nominal categorical variables (Gender, Marital Status, Product Enquiries).
+### 2. Feature Engineering
 
-Applied scaling for numerical variables like Age, Income, Time with Employer.
+  Label encoded ordinal variables such as Education Level.
 
-Model Building
+  One-Hot encoded nominal categorical variables (Gender, Marital Status, Product Enquiries).
 
-Implemented Random Forest, XGBoost, and Decision Tree classifiers to predict credit risk tiers (P1, P2, P3, P4).
+  Applied scaling for numerical variables like Age, Income, Time with Employer.
 
-Tuned hyperparameters using GridSearchCV for optimal accuracy.
+### 3. Model Building
 
-Evaluated models on accuracy, precision, recall, and F1-score for all classes.
+  Implemented Random Forest, XGBoost, and Decision Tree classifiers to predict credit risk tiers (P1, P2, P3, P4).
 
-Selected XGBoost as the best performer based on multi-class metrics.
+  Tuned hyperparameters using GridSearchCV for optimal accuracy.
 
-EPS Prediction Web App
+  Evaluated models on accuracy, precision, recall, and F1-score for all classes.
 
-Built a Flask application to serve the trained EPS prediction model (eps_v1.sav).
+  Selected XGBoost as the best performer based on multi-class metrics.
 
-Designed a user-friendly HTML form for entering key financial metrics (ROCE, CASA, Operating Profit, Expenses, etc.).
+### 4. EPS Prediction Web App
 
-Deployed locally to provide instant EPS predictions.
+  Built a Flask application to serve the trained EPS prediction model (eps_v1.sav).
 
-Deployment & Feedback
+  Designed a user-friendly HTML form for entering key financial metrics (ROCE, CASA, Operating Profit, Expenses, etc.).
 
-Configured model to be retrainable with new data/feedback.
+  Deployed locally to provide instant EPS predictions.
 
-Designed workflow for continuous improvement based on real-time user interaction.
+### 5. Deployment & Feedback
 
-Tech Stack
-Languages: Python
+  Configured model to be retrainable with new data/feedback.
 
-Libraries: Pandas, NumPy, Matplotlib, Scikit-Learn, XGBoost, SciPy, Statsmodels
+  Designed workflow for continuous improvement based on real-time user interaction.
+  
 
-Model Serving: Flask
+## Tech Stack
 
-Frontend: HTML, CSS
+  Languages: Python
 
-Data Storage: Excel
+  Libraries: Pandas, NumPy, Matplotlib, Scikit-Learn, XGBoost, SciPy, Statsmodels
 
-Other Tools: GridSearchCV for hyperparameter tuning, Pickle for model serialization
+  Model Serving: Flask
 
-Key Features
+  Frontend: HTML, CSS
+
+  Data Storage: Excel
+
+  Other Tools: GridSearchCV for hyperparameter tuning, Pickle for model serialization
+
+
+## Key Features
 ✅ End-to-end ML pipeline — from raw banking data to deployment
 ✅ Multi-class classification for credit risk segmentation
 ✅ EPS prediction via interactive web form
 ✅ Strong feature selection using statistical tests (Chi-square, ANOVA, VIF)
 ✅ Scalable architecture for retraining and model updates
 
-How to Run the Project
-Clone the Repository
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/CreditRisk_EPS_Prediction.git
-cd CreditRisk_EPS_Prediction
-Install Dependencies
+## How to Run the Project
+  Clone the Repository
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Flask App
+    git clone https://github.com/yourusername/CreditRisk_EPS_Prediction.git
 
-bash
-Copy
-Edit
-python deploy.py
+## Install Dependencies
+
+    pip install -r requirements.txt
+
+
+
