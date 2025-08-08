@@ -1,9 +1,9 @@
-# Credit-Risk-Modelling
+# 📌 Credit Risk Modeling & EPS Prediction
+
 Revising the current credit lending strategy of bank using machine learning
 
+## Overview
 
-## 📌 Credit Risk Modeling & EPS Prediction
-Overview
 This project implements an end-to-end machine learning solution for credit risk assessment and EPS (Earnings Per Share) prediction in the banking sector.
 It covers data cleaning, feature engineering, model building, hyperparameter tuning, and web deployment using Flask, allowing users to input financial metrics and instantly receive EPS predictions.
 
