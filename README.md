@@ -120,7 +120,7 @@ Contains customer credit history information from external credit bureaus.
 ### How to Run the Project
   Clone the Repository
 
-    git clone https://github.com/snbk-002/Credit-Risk-Modelling/tree/main.git
+    git clone https://github.com/snbk-002/Credit-Risk-Modelling.git
 
 ### Install Dependencies
 
