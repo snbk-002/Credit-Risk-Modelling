@@ -2,6 +2,9 @@
 
 Revising the current credit lending strategy of bank using machine learning
 
+![Screenshot 2025-08-09 182156](https://github.com/user-attachments/assets/46f6e4ab-088e-4101-ae01-453e7b5d238f)
+
+
 ## Overview
 
 This project implements an end-to-end machine learning solution for credit risk assessment and EPS (Earnings Per Share) prediction in the banking sector.
