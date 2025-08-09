@@ -8,8 +8,43 @@ This project implements an end-to-end machine learning solution for credit risk 
 It covers data cleaning, feature engineering, model building, hyperparameter tuning, and web deployment using Flask, allowing users to input financial metrics and instantly receive EPS predictions.
 
 
+## Dataset Description:-
+
+
+### 1. Bureau Dataset (case_study1.xlsx)
+
+Contains customer credit history information from external credit bureaus.
+
+#### Key features:
+
+   ->PROSPECTID – unique customer ID (used to merge datasets).
+
+   ->Age_Oldest_TL / Age_Newest_TL – age of oldest/newest trade lines.
+
+   ->MARITALSTATUS, EDUCATION, GENDER – demographic details.
+
+   ->Recent payment, delinquency, and enquiry details.
+
+   ->Purpose: Gives a risk profile based on past credit behavior.
+
+### 2. Internal Product Dataset (case_study2.xlsx)
+  
+  Contains bank’s internal data about its own products and customer engagement.
+
+#### Key features:
+
+   ->Product enquiry counts and recent product interactions (last_prod_enq2, first_prod_enq2).
+
+   ->Income details like NETMONTHLYINCOME.
+
+   ->Employment details like Time_With_Curr_Empr.
+
+   ->Purpose: Adds in-house insights about a customer’s interaction with the bank.
+
+
 
 ## Project Workflow
+
 
 ### 1. Data Understanding & Preparation
 
